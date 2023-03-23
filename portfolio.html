@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Intro-Page </title>
+    <link rel="icon" href="https://saugeentimes.com/wp-content/uploads/2018/05/S-Favicon.png">
+    <link rel="stylesheet" href="style1.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:wght@700&family=Pacifico&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+    <main>
+        <h1 class="main-heading"> Hey! I'm Sushmita. </h1>
+        <h3 class="side-heading main-heading"> This is where you can find all about me. </h3>
+        
+        <div>
+            <img src="images/Selfie-1.jpg" alt="Image-1" class="center-image">
+        </div>
+        
+        <br><br>
+        <div class="box box1">
+            <h2 class="multi-headings"> INTRODUCTION </h2>
+            <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam quia voluptatibus rerum at, quibusdam amet consequatur distinctio, repellat, atque id! Eligendi ut iste enim consectetur, corporis at facere odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat tenetur, soluta ipsa odit eum consequatur et ut explicabo illum distinctio aliquid ullam amet? Recusandae earum repellendus est soluta libero.</p>
+        </div>
+
+        <div class=" box box2">
+            <h2 class="multi-headings"> EDUCATION </h2>
+            <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maxime consequatur iure eos adipisci tempore est facere in, id similique consectetur reprehenderit facilis, error quos, assumenda deserunt molestias. Debitis ullam, totam quibusdam harum officia maxime ipsa id ab ea voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta, et rem voluptatum nobis tempore fuga similique soluta temporibus provident adipisci vel beatae accusamus, enim ipsum eveniet? Nam, voluptates consequuntur.</p>
+        </div>
+
+        <div class=" box box3">
+            <h2 class="multi-headings"> PROJECTS </h2>
+            <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maxime consequatur iure eos adipisci tempore est facere in, id similique consectetur reprehenderit facilis, error quos, assumenda deserunt molestias. Debitis ullam, totam quibusdam harum officia maxime ipsa id ab ea voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est eius sunt, nemo veritatis deserunt modi id provident ea et, reiciendis magni natus aliquam sint unde voluptatum voluptas atque maxime sit?</p>
+        </div>
+        <br><br>
+
+        <!-- Contact Us Form -->
+
+        <h1 class="form-heading1"> CONTACT FORM </h1>
+        <h3 class="form-heading2 form-heading1"> Please fill in all the details carefully. </h3>
+
+        <div class="form-body">
+            
+            <form action="post">
+               <input type="text" size="50" name="fname" placeholder="Full Name" required><br><br>
+
+               <input type="email" size="50" name="email" placeholder="xyz@gmail.com" required><br><br>
+
+               <input type="password" size="50" name="password" placeholder="Password" required><br><br>
+
+               <input type="text" size="50" name="phone" placeholder="Phone No." required><br><br>
+              
+               <!-- radio buttons -> for gender -->
+               <span> Gender: &nbsp; &nbsp; &nbsp;</span>
+               <label for="female" class="gender"> Female </label>
+               <input type="radio" name="gender" id="female" required>
+               <label for="male" class="gender"> Male </label>
+               <input type="radio" name="gender" id="male" required>
+               <label for="others" class="gender"> Prefer not to say </label>
+               <input type="radio" name="gender" id="others" required><br><br>
+
+               <textarea name="query" cols="48" rows="5" placeholder="Type your query"></textarea><br><br>
+
+               <button class="button"> Connect <i class="fa-sharp fa-solid fa-paper-plane fa-2xs"></i></button>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- after submitting the form -> Post API Endpoint
+        http://127.0.0.1:5500/post?fname=Sushmita&email=sushmitasachan97%40gmail.com&password=SOiahwovkl%2Cn+sA&query=qFKFn%2Cvnkui%3BWVR%2C+vnWU.
+    -->
+
+    <br><br>
+
+    <div class="details">
+        
+        <h2 class="footer-heading"> DETAILS </h2>
+        <ul style="list-style-type:none; color:#1f6521">
+
+            <li>
+                <h4 class="list-element"> Email: sushmitasachan97@gmail.com</h4>     
+            </li>
+            <li>
+                <h4 class="list-element"> Contact No: 8528015051</h4>
+            </li>
+            <li>
+                <h4 class="list-element"> Some important links: </h4>
+            </li>
+
+            <!-- nested unordered list -->  
+            <ul style="list-style-type: disc;">
+                <li> 
+                    <h4><a href="https://resume.io/r/U2Jbh4j9s" target="_blank"> Resume </a></h4>
+                </li>
+                <li> 
+                    <h4><a href="https://www.linkedin.com/in/sushmita-singh-sachan/" target="_blank"> LinkedIn </a></h4>
+                </li>
+                <li>
+                    <h4><a href="https://github.com/Brainy-Bytecode" target="_blank"> GitHub </a></h4>
+                </li>
+                <li>
+                    <h4><a href="https://leetcode.com/brainy_bytecode/" target="_blank"> LeetCode </a></h4>
+                </li>
+            </ul>
+        </ul>
+
+    </div>
+
+    <br>
+    <footer>
+        <h3 class="last-footer"> Have A Nice Day!🌸</h3>
+    </footer>    
+        
+    
+
+</body>
+
+</html>
